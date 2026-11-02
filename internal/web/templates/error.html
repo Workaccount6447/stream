@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>{{.Title}} · {{.BotName}}</title>{{template "style"}}</head>
+<body><div class="card">
+<div class="icon">⚠️</div>
+<h1>{{.Title}}</h1>
+<p>{{.Message}}</p>
+{{if .UpdatesURL}}<a class="btn" href="{{.UpdatesURL}}">Get help</a>{{end}}
+<div class="code">HTTP {{.Code}}</div>
+<div class="foot">{{.BotName}}</div>
+</div></body></html>

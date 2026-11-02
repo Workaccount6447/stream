@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Link expired · {{.BotName}}</title>{{template "style"}}</head>
+<body><div class="card">
+<div class="icon">⌛</div>
+<h1>{{.Title}}</h1>
+<p>{{.Message}}</p>
+{{if .FileName}}<div class="file">📂 {{.FileName}}</div>{{end}}
+<p>Please send the file to the bot again to get a fresh link.</p>
+<p>Tip: set your own storage channel in the bot (<b>/storage</b>) and your files will never expire.</p>
+{{if .UpdatesURL}}<a class="btn" href="{{.UpdatesURL}}">Open updates channel</a>{{end}}
+<div class="code">HTTP {{.Code}} · EXPIRED</div>
+<div class="foot">{{.BotName}}</div>
+</div></body></html>
